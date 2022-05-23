@@ -13,7 +13,7 @@ scaledX = scale.fit_transform(X)
 regr = linear_model.LinearRegression()
 regr.fit(scaledX, y)
 
-scaled = scale.transform([[117014, 116040]])
+scaled = scale.transform([[117013, 116040]])
 
 predictedq3 = regr.predict([scaled[0]])
 print(predictedq3)
