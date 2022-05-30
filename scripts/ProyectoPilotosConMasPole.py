@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load results dataset
-data = pd.read_csv("../datasets/results.csv") 
+data = pd.read_csv("../datasets/resultsMonaco.csv") 
 data2 = pd.read_csv("../datasets/drivers.csv") 
 
 print(data['driverId'].nunique())

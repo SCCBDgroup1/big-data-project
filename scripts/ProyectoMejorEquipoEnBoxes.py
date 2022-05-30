@@ -122,20 +122,30 @@ DuracionmediaAlonso = df['milliseconds'].mean() /1000
 print(DuracionmediaAlonso)
 
 DuracionWilliams = DuracionmediaRussell
+print(DuracionWilliams)
 DuracionHass = (DuracionmediaMazepin + DuracionmediaSchumacher) / 2
+print(DuracionHass)
 DuracionAlfaRomeo = (DuracionmediaRaikkonen + DuracionmediaGiovinazzi) / 2
+print(DuracionAlfaRomeo)
 DuracionAlpine = (DuracionmediaAlonso + DuracionmediaOcon) / 2
+print(DuracionAlpine)
 DuracionAlphaTauri = (DuracionmediaGasly + DuracionmediaTsunoda) / 2
+print(DuracionAlphaTauri)
 DuracionMclaren = (DuracionmediaRicciardo + DuracionmediaNorris) / 2
+print(DuracionMclaren)
 DuracionAstonMartin = (DuracionmediaVettel + DuracionmediaStroll) / 2
+print(DuracionAstonMartin)
 DuracionFerrari = (DuracionmediaSainz + DuracionmediaLeclerc) / 2
+print(DuracionFerrari)
 DuracionRedBull = (DuracionmediaVerstappen + DuracionmediaPerez) / 2
+print(DuracionRedBull)
 DuracionMercedes = (DuracionmediaHamilton + DuracionmediaBottas) / 2
+print(DuracionMercedes)
 
 #Definimos una lista con pilotos como string
-equipos = ['Williams', 'Hass', 'AlfaRomeo', 'Alpine', 'AlphaTauri', 'Mclaren' , 'AstonMartin', 'Ferrari', 'RedBull', 'Mercedes']
+equipos = ['Hass', 'AlfaRomeo', 'Mclaren', 'Williams' ,'Alpine', 'AlphaTauri',  'AstonMartin', 'RedBull', 'Ferrari', 'Mercedes']
 #Definimos una lista con tiempos como entero
-tiempos = [DuracionWilliams, DuracionHass, DuracionAlfaRomeo, DuracionAlpine, DuracionAlphaTauri, DuracionMclaren, DuracionAstonMartin, DuracionFerrari, DuracionRedBull, DuracionMercedes]
+tiempos = [DuracionHass, DuracionAlfaRomeo, DuracionMclaren, DuracionWilliams, DuracionAlpine, DuracionAlphaTauri, DuracionAstonMartin, DuracionRedBull, DuracionFerrari,  DuracionMercedes]
 
 fig, ax = plt.subplots()
 #Colocamos una etiqueta en el eje Y

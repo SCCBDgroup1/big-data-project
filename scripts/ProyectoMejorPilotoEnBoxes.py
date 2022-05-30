@@ -122,9 +122,9 @@ DuracionmediaAlonso = df['milliseconds'].mean() /1000
 print(DuracionmediaAlonso)
 
 #Definimos una lista con pilotos como string
-circuitos = ['Ocon', 'Vettel', 'Schumacher', 'Mazepin', 'Gasly', 'Tsunoda' , 'Russel', 'Raikkonen', 'Verstappen', 'Sainz', 'Ricciardo', 'Stroll', 'Hamilton', 'Giovinazzi', 'Leclerc', 'Perez', 'Norris', 'Bottas', 'Alonso']
+circuitos = ['Schumacher','Giovinazzi', 'Ocon',  'Norris', 'Ricciardo', 'Stroll', 'Tsunoda' , 'Russel', 'Mazepin', 'Perez', 'Gasly', 'Sainz', 'Raikkonen', 'Alonso','Leclerc', 'Vettel','Verstappen', 'Hamilton', 'Bottas']
 #Definimos una lista con tiempos como entero
-tiempos = [DuracionmediaOcon, DuracionmediaVettel, DuracionmediaSchumacher, DuracionmediaMazepin, DuracionmediaGasly, DuracionmediaTsunoda, DuracionmediaRussel, DuracionmediaRaikkonen, DuracionmediaVerstappen, DuracionmediaSainz, DuracionmediaRicciardo, DuracionmediaStroll, DuracionmediaHamilton, DuracionmediaGiovinazzi, DuracionmediaLeclerc, DuracionmediaPerez, DuracionmediaNorris, DuracionmediaBottas, DuracionmediaAlonso]
+tiempos = [DuracionmediaSchumacher, DuracionmediaGiovinazzi, DuracionmediaOcon, DuracionmediaNorris, DuracionmediaRicciardo, DuracionmediaStroll, DuracionmediaTsunoda, DuracionmediaRussel, DuracionmediaMazepin, DuracionmediaPerez, DuracionmediaGasly, DuracionmediaSainz, DuracionmediaRaikkonen, DuracionmediaAlonso, DuracionmediaLeclerc,  DuracionmediaVettel,DuracionmediaVerstappen,  DuracionmediaHamilton,  DuracionmediaBottas]
 
 fig, ax = plt.subplots()
 #Colocamos una etiqueta en el eje Y
