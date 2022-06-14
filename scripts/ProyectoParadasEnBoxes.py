@@ -206,12 +206,14 @@ tiempos = [Duracionmedia, Duracionmedia2, Duracionmedia3, Duracionmedia4, Duraci
 fig, ax = plt.subplots()
 #Colocamos una etiqueta en el eje Y
 ax.set_ylabel('Tiempo de parada')
+ax.set_xlabel('Circuito')
 #Colocamos una etiqueta en el eje X
 ax.set_title('Relacion entre tiempo de parada y Circuito')
 #Creamos la grafica de barras utilizando 'paises' como eje X y 'tiempo' como eje y.
 plt.bar(circuitos, tiempos)
 plt.savefig('barras_simple.png')
 plt.xticks(rotation=90)
+plt.xticks([])
 #Finalmente mostramos la grafica con el metodo show()
 plt.show()
 

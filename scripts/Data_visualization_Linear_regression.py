@@ -46,11 +46,14 @@ df_merged=df_merged[df_merged['year']!=2019]
 df_merged=df_merged.sort_values(by=['year', 'raceNumber', 'positionOrder'], ascending=[False, True, True])
 
 #\\N and Nan none valid to analyze, we use 0's, could be not the best option...
-df_merged.time.replace(np.nan, 0, inplace=True)
-df_merged.milliseconds.replace(np.nan, 0, inplace=True)
-df_merged.fastest_lap_rank.replace(np.nan, 0, inplace=True)
-df_merged.fastestLapTime.replace(np.nan, 0, inplace=True)
-df_merged.fastestLapSpeed.replace(np.nan, 0, inplace=True)
+df_merged.time.replace('\\N', 0, inplace=True)
+df_merged.milliseconds.replace('\\N', 0, inplace=True)
+df_merged.fastest_lap_rank.replace('\\N', 0, inplace=True)
+df_merged.fastestLapTime.replace('\\N', 0, inplace=True)
+df_merged.fastestLapSpeed.replace('\\N', 0, inplace=True)
+
+#delete index 0, because repeat axis 1 head
+df_merged=df_merged.drop(df_merged.index[0])
 
 #now, we change the different dtypes values to adapt to the analysis
 df_merged.fastestLapSpeed=df_merged.fastestLapSpeed.astype(float)
@@ -65,9 +68,6 @@ df_merged.positionOrder=df_merged.positionOrder.astype('int64')
 df_merged.points=df_merged.points.astype(float)
 
 df_merged.reset_index(drop=True, inplace=True)
-
-#delete index 0, because repeat axis 1 head
-df_merged=df_merged.drop(df_merged.index[0])
 
 #now, we just prepare the dataframe and we explore all posibilities
 print(df_merged.shape)
